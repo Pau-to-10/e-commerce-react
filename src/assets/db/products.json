@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "id": 101,
+      "name": "Watermelon",
+      "price": 10,
+      "image": "https://brooklynpods.es/wp-content/uploads/2022/09/0-SANDI%E2%95%A0uA.png",
+      "inStock": 0,
+      "fastDelivery": true,
+      "ratings": 4
+    },
+    {
+      "id": 102,
+      "name": "Lemon Lime",
+      "price": 10,
+      "image": "https://brooklynpods.es/wp-content/uploads/2022/09/0LIMA-LIMNO%E2%95%A0uN.png",
+      "inStock": 5,
+      "fastDelivery": true,
+      "ratings": 4
+    },
+    {
+      "id": 103,
+      "name": "Bubblegum Blueberry",
+      "price": 9,
+      "image": "https://brooklynpods.es/wp-content/uploads/2022/09/0-CHICLE-DE-ARA%E2%95%A0uNDANOS.png",
+      "inStock": 3,
+      "fastDelivery": true,
+      "ratings": 4
+    },
+    {
+      "id": 104,
+      "name": "Cola Lemon",
+      "price": 10,
+      "image": "https://brooklynpods.es/wp-content/uploads/2022/09/0-COLA-LIMO%E2%95%A0uN.png",
+      "inStock": 7,
+      "fastDelivery": true,
+      "ratings": 4
+    },
+    {
+      "id": 105,
+      "name": "Honeydew Melon Ice",
+      "price": 10,
+      "image": "https://brooklynpods.es/wp-content/uploads/2022/09/0-MELO%E2%95%A0uN-DULCE.png",
+      "inStock": 10,
+      "fastDelivery": true,
+      "ratings": 4
+    },
+    {
+      "id": 106,
+      "name": "Pina Colada",
+      "price": 10,
+      "image": "https://brooklynpods.es/wp-content/uploads/2022/09/0-PIN%E2%95%A0aA-COLADA.png",
+      "inStock": 5,
+      "fastDelivery": false,
+      "ratings": 5
+    },
+    {
+      "id": 107,
+      "name": "Apple",
+      "price": 10,
+      "image": "https://brooklynpods.es/wp-content/uploads/2022/09/0-MANZANA.png",
+      "inStock": 5,
+      "fastDelivery": true,
+      "ratings": 4
+    },
+    {
+      "id": 108,
+      "name": "Cotton Candy",
+      "price": 10,
+      "image": "https://brooklynpods.es/wp-content/uploads/2022/09/0-ALGODO%E2%95%A0uN-DE-AZU%E2%95%A0uCAR.png",
+      "inStock": 5,
+      "fastDelivery": true,
+      "ratings": 2
+    },
+    {
+      "id": 109,
+      "name": "Banana",
+      "price": 10,
+      "image": "https://brooklynpods.es/wp-content/uploads/2022/09/BANANA-2.png",
+      "inStock": 5,
+      "fastDelivery": true,
+      "ratings": 3
+    }
+  ]
+}
