@@ -32,6 +32,7 @@ const ProductCard = ({ prod }) => {
                   type: "REMOVE_FROM_CART",
                   payload: prod,
                 });
+                localStorage.removeItem("prod");
               }}
               variant="danger"
             >
@@ -44,6 +45,8 @@ const ProductCard = ({ prod }) => {
                   type: "ADD_TO_CART",
                   payload: prod,
                 });
+                const array = [JSON.stringify(prod)];
+                localStorage.setItem("prod", array);
               }}
               disabled={!prod.inStock}
             >

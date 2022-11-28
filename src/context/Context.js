@@ -43,7 +43,7 @@ const Context = ({ children }) => {
     cart: [],
   });
 
-  console.log(state);
+  // console.log(state);
   useEffect(() => {
     axios
       .get("http://localhost:3001/products")

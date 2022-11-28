@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Badge,
   Button,
@@ -10,9 +10,10 @@ import {
 } from "react-bootstrap";
 import { FaShoppingCart } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { CartState } from "../../context/Context";
 import "./header.css";
+import { AuthContext } from "../../auth/context/AuthContext";
 
 const Header = () => {
   const {
@@ -20,6 +21,18 @@ const Header = () => {
     dispatch,
     productDispatch,
   } = CartState();
+
+  const { user, logout } = useContext(AuthContext);
+
+  const navigate = useNavigate();
+
+  const onLogout = () => {
+    logout();
+
+    navigate("/", {
+      replace: true,
+    });
+  };
 
   return (
     <Navbar bg="dark" variant="dark" style={{ height: 80 }}>
@@ -41,7 +54,7 @@ const Header = () => {
           ></FormControl>
         </Navbar.Text>
         <Nav>
-          <Dropdown alignRight>
+          <Dropdown>
             <Dropdown.Toggle variant="success">
               <FaShoppingCart color="white" fontSize="25px" />
               <Badge>{cart.length}</Badge>
@@ -84,6 +97,16 @@ const Header = () => {
               )}
             </Dropdown.Menu>
           </Dropdown>
+          <Nav.Item>
+            <div className="ml-2">
+              <ul className="navbar-nav ml-auto">
+                <span className="nav-item nav-link text-primary">
+                  {user ? `Welcome back, ${user.name}` : null}
+                </span>
+                <Nav.Link onClick={onLogout}>Logout</Nav.Link>
+              </ul>
+            </div>
+          </Nav.Item>
         </Nav>
       </Container>
     </Navbar>
